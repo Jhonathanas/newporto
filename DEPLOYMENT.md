@@ -47,7 +47,7 @@ Rewrite Vercel penting karena backend memakai cookie HttpOnly `SameSite=Lax` dan
 Repo lokal sudah diinisialisasi dan sudah ada commit awal. Buat repo baru di GitHub (kosong, tanpa README), lalu:
 
 ```bash
-git remote add origin https://github.com/<USER>/<REPO>.git
+git remote add origin https://github.com/Jhonathanas/newporto.git
 git branch -M main
 git push -u origin main
 ```

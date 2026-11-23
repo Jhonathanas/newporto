@@ -12,6 +12,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { useContentData } from '../lib/content'
 import { useLocale, usePageTitle } from '../lib/useLocale'
 
+const PROFILE_PHOTO = '/profile.jpg'
+
 export default function Home() {
   const { t } = useTranslation()
   const { translate } = useLocale()
@@ -68,35 +70,65 @@ export default function Home() {
               </div>
             </div>
 
-            <Card
-              className="animate-rise overflow-hidden shadow-sm backdrop-blur"
-              style={{ animationDelay: '120ms' }}
-            >
-              <CardHeader className="flex flex-row items-center gap-1.5 border-b py-3">
-                <span className="size-2.5 rounded-full bg-border" />
-                <span className="size-2.5 rounded-full bg-border" />
-                <span className="size-2.5 rounded-full bg-border" />
-                <span className="ml-2 font-mono text-[11px] text-muted-foreground">~/profile</span>
-              </CardHeader>
-              <CardContent className="space-y-3 font-mono text-xs leading-relaxed sm:text-[13px]">
-                <p>
-                  <span className="text-primary">$</span> whoami
-                </p>
-                <p className="pl-4 text-foreground">{t('hero.codeRole')}</p>
-                <p className="pt-2">
-                  <span className="text-primary">$</span> stack
-                </p>
-                <p className="pl-4 text-muted-foreground">{t('hero.codeStack')}</p>
-                <p className="pt-2">
-                  <span className="text-primary">$</span> focus
-                </p>
-                <p className="pl-4 text-muted-foreground">{t('hero.codeFocus')}</p>
-                <div className="flex items-center gap-2 border-t border-border/70 pt-3">
-                  <span className="size-1.5 rounded-full bg-primary" />
-                  <span className="text-muted-foreground">{t('hero.codeStatus')}</span>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="animate-rise space-y-4" style={{ animationDelay: '120ms' }}>
+              <Card className="overflow-hidden shadow-sm backdrop-blur">
+                <CardContent className="flex items-center gap-4 p-4">
+                  <div className="size-20 shrink-0 overflow-hidden rounded-lg border border-border bg-muted sm:size-24">
+                    <img
+                      src={PROFILE_PHOTO}
+                      alt={profile.name}
+                      onError={(event) => {
+                        event.currentTarget.onerror = null
+                        event.currentTarget.src = '/JONA.jpeg'
+                      }}
+                      className="size-full object-cover object-top"
+                    />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-primary">
+                      photo.jpg
+                    </p>
+                    <p className="mt-1 truncate text-base font-semibold tracking-tight">
+                      {profile.name}
+                    </p>
+                    <p className="mt-0.5 truncate text-xs text-muted-foreground">
+                      {translate(profile.role)}
+                    </p>
+                    <p className="mt-2 inline-flex items-center gap-1.5 font-mono text-[10px] text-muted-foreground">
+                      <span className="size-1.5 rounded-full bg-primary" />
+                      {t('hero.available')}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden shadow-sm backdrop-blur">
+                <CardHeader className="flex flex-row items-center gap-1.5 border-b py-3">
+                  <span className="size-2.5 rounded-full bg-border" />
+                  <span className="size-2.5 rounded-full bg-border" />
+                  <span className="size-2.5 rounded-full bg-border" />
+                  <span className="ml-2 font-mono text-[11px] text-muted-foreground">~/profile</span>
+                </CardHeader>
+                <CardContent className="space-y-3 font-mono text-xs leading-relaxed sm:text-[13px]">
+                  <p>
+                    <span className="text-primary">$</span> whoami
+                  </p>
+                  <p className="pl-4 text-foreground">{t('hero.codeRole')}</p>
+                  <p className="pt-2">
+                    <span className="text-primary">$</span> stack
+                  </p>
+                  <p className="pl-4 text-muted-foreground">{t('hero.codeStack')}</p>
+                  <p className="pt-2">
+                    <span className="text-primary">$</span> focus
+                  </p>
+                  <p className="pl-4 text-muted-foreground">{t('hero.codeFocus')}</p>
+                  <div className="flex items-center gap-2 border-t border-border/70 pt-3">
+                    <span className="size-1.5 rounded-full bg-primary" />
+                    <span className="text-muted-foreground">{t('hero.codeStatus')}</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
