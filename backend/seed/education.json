@@ -1,0 +1,41 @@
+[
+  {
+    "school": "Universitas Amikom Yogyakarta",
+    "degree": {
+      "id": "S1 Informatika",
+      "en": "Bachelor of Informatics"
+    },
+    "period": {
+      "id": "GPA 3.56",
+      "en": "GPA 3.56"
+    },
+    "details": {
+      "id": "Mata kuliah relevan: Web Programming, Database Systems, Software Engineering, Algorithms and Programming.",
+      "en": "Relevant courses: Web Programming, Database Systems, Software Engineering, Algorithms and Programming."
+    },
+    "highlights": [
+      {
+        "id": "Proyek akhir: aplikasi manajemen perpustakaan dengan Laravel dan SQL, lengkap dengan dokumen Software Requirements Specification (SRS).",
+        "en": "Final project: built a library management application with Laravel and SQL, and wrote the full Software Requirements Specification (SRS) document."
+      }
+    ],
+    "sortOrder": 0
+  },
+  {
+    "school": "Dicoding",
+    "degree": {
+      "id": "MSIB Cycle 6 — Independent Study (React & Backend)",
+      "en": "MSIB Cycle 6 — Independent Study (React & Backend)"
+    },
+    "period": {
+      "id": "Apr — Sep 2024",
+      "en": "Apr — Sep 2024"
+    },
+    "details": {
+      "id": "Program intensif React dan backend. Proyek akhir tim berupa aplikasi informasi destinasi wisata.",
+      "en": "An intensive React and backend program. The team final project was a travel destination information application."
+    },
+    "highlights": [],
+    "sortOrder": 1
+  }
+]

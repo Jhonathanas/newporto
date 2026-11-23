@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS contact_messages;
+DROP TABLE IF EXISTS education;
+DROP TABLE IF EXISTS experiences;
+DROP TABLE IF EXISTS skill_groups;
+DROP TABLE IF EXISTS posts;
+DROP TABLE IF EXISTS projects;
+DROP TABLE IF EXISTS profile;
+DROP TABLE IF EXISTS users;

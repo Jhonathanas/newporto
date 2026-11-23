@@ -1,0 +1,29 @@
+{
+  "name": "Jonathan Adi Saputro",
+  "initials": "JS",
+  "role": {
+    "id": "Full Stack Developer",
+    "en": "Full Stack Developer"
+  },
+  "tagline": {
+    "id": "Full Stack Developer dengan fokus backend dan pengalaman 2+ tahun membangun aplikasi web enterprise.",
+    "en": "Full Stack Developer with a backend focus and 2+ years of experience building enterprise web applications."
+  },
+  "bio": {
+    "id": "Saya membangun aplikasi web enterprise menggunakan Node.js, Go, React, dan Next.js. Terbiasa dengan arsitektur microservices, desain database multi-tenant, serta integrasi data SAP ke sistem internal. Saya menikmati kerja dalam tim agile lintas fungsi dan berfokus pada solusi yang skalabel, andal, dan mudah dirawat.",
+    "en": "I build enterprise web applications with Node.js, Go, React, and Next.js. I am experienced in microservices architecture, multi-tenant database design, and integrating SAP data into internal systems. I enjoy working in agile, cross-functional teams and focus on delivering scalable, reliable, and maintainable solutions."
+  },
+  "location": "Yogyakarta, Indonesia",
+  "email": "jonathanadisaputro99@gmail.com",
+  "phone": "+62 838 5121 5107",
+  "socials": [
+    {
+      "label": "Website",
+      "url": "https://jnathan-porto.netlify.app"
+    }
+  ],
+  "availability": {
+    "id": "Terbuka untuk peluang full-stack & kolaborasi",
+    "en": "Open to full-stack opportunities & collaborations"
+  }
+}

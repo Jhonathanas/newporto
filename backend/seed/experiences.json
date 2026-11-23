@@ -1,0 +1,137 @@
+[
+  {
+    "company": "Elnusa TBK",
+    "role": {
+      "id": "Junior Full Stack Developer",
+      "en": "Junior Full Stack Developer"
+    },
+    "period": {
+      "id": "Mar 2025 — Sekarang",
+      "en": "Mar 2025 — Present"
+    },
+    "description": {
+      "id": "Membangun dan mengembangkan aplikasi internal enterprise untuk domain Legal, Procurement, dan Vendor Management yang dipakai lintas business unit.",
+      "en": "Built and enhanced internal enterprise applications for the Legal, Procurement, and Vendor Management domains, used across multiple business units."
+    },
+    "highlights": [
+      {
+        "id": "Berkontribusi pada arsitektur microservices dengan desain database multi-tenant, sehingga beberapa business unit berjalan di platform yang sama dengan data yang tetap terisolasi.",
+        "en": "Contributed to a microservices architecture with multi-tenant database design, enabling multiple business units to run on a shared platform with isolated data."
+      },
+      {
+        "id": "Mengintegrasikan data SAP ke fitur procurement untuk mengurangi input manual.",
+        "en": "Integrated SAP data into procurement features to reduce manual input."
+      },
+      {
+        "id": "Mengelola operasi database backend dan menjaga konsistensi data antar layanan.",
+        "en": "Managed backend database operations and maintained data consistency across services."
+      },
+      {
+        "id": "Berkolaborasi dengan tim product, QA, dan business user untuk meningkatkan performa, skalabilitas, dan keandalan sistem.",
+        "en": "Collaborated with cross-functional teams (product, QA, business users) to improve system performance, scalability, and reliability."
+      }
+    ],
+    "tech": [
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "Microservices",
+      "SQL"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "company": "Kala Nanti Ruang Guru",
+    "role": {
+      "id": "Coding Teacher (Part-time)",
+      "en": "Coding Teacher (Part-time)"
+    },
+    "period": {
+      "id": "Jul 2025 — Jul 2026",
+      "en": "Jul 2025 — Jul 2026"
+    },
+    "description": {
+      "id": "Mengajar dasar pemrograman dan computational thinking untuk siswa usia 7–18 tahun, secara online maupun tatap muka.",
+      "en": "Taught programming fundamentals and computational thinking to students aged 7–18, online and in person."
+    },
+    "highlights": [
+      {
+        "id": "Merancang pelajaran interaktif menggunakan Scratch, MIT App Inventor, dan Python.",
+        "en": "Designed interactive lessons using Scratch, MIT App Inventor, and Python."
+      },
+      {
+        "id": "Membimbing siswa melalui proyek praktik yang melatih pemecahan masalah dan berpikir kritis.",
+        "en": "Guided students through hands-on projects that built problem-solving and critical thinking skills."
+      }
+    ],
+    "tech": [
+      "Scratch",
+      "MIT App Inventor",
+      "Python"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "company": "Stevor",
+    "role": {
+      "id": "Front End Intern",
+      "en": "Front End Intern"
+    },
+    "period": {
+      "id": "Nov 2024 — Feb 2025",
+      "en": "Nov 2024 — Feb 2025"
+    },
+    "description": {
+      "id": "Mengembangkan admin panel internal berbasis web, menerjemahkan desain UI menjadi komponen frontend yang responsif.",
+      "en": "Developed a web-based internal admin panel, translating UI designs into responsive frontend components."
+    },
+    "highlights": [
+      {
+        "id": "Mengintegrasikan REST API backend dan membangun fitur penyajian data.",
+        "en": "Integrated backend REST APIs and implemented data presentation features."
+      },
+      {
+        "id": "Mengintegrasikan Google Maps API untuk kebutuhan berbasis lokasi.",
+        "en": "Integrated the Google Maps API for location-based functionality."
+      }
+    ],
+    "tech": [
+      "React",
+      "REST API",
+      "Google Maps API"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "company": "Tlab (PT Teknologi Kode Indonesia)",
+    "role": {
+      "id": "Full Stack Intern",
+      "en": "Full Stack Intern"
+    },
+    "period": {
+      "id": "Apr — Sep 2024",
+      "en": "Apr — Sep 2024"
+    },
+    "description": {
+      "id": "Mengembangkan sistem manajemen proyek QA untuk mengelola test case dan alur pengujian.",
+      "en": "Developed a QA project management system to manage test cases and testing workflows."
+    },
+    "highlights": [
+      {
+        "id": "Mengimplementasikan fitur CRUD dan sinkronisasi data antara dua database yang terpisah.",
+        "en": "Implemented CRUD features and data synchronization between two separate databases."
+      },
+      {
+        "id": "Bekerja bersama QA engineer untuk menerjemahkan kebutuhan pengujian menjadi solusi teknis.",
+        "en": "Worked with QA engineers to translate testing requirements into technical solutions."
+      }
+    ],
+    "tech": [
+      "REST API",
+      "SQL",
+      "Data Sync"
+    ],
+    "sortOrder": 3
+  }
+]

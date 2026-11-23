@@ -1,0 +1,71 @@
+[
+  {
+    "title": {
+      "id": "Backend",
+      "en": "Backend"
+    },
+    "items": [
+      "Node.js",
+      "Express.js",
+      "Go",
+      "Laravel",
+      "REST API",
+      "Microservices",
+      "Multi-tenant DB",
+      "SQL",
+      "Prisma"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "title": {
+      "id": "Frontend",
+      "en": "Frontend"
+    },
+    "items": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "title": {
+      "id": "Tools & Praktik",
+      "en": "Tools & Practices"
+    },
+    "items": [
+      "Git",
+      "Docker",
+      "CI/CD",
+      "Agile",
+      "TDD",
+      "NextAuth"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "title": {
+      "id": "Integrasi",
+      "en": "Integration"
+    },
+    "items": [
+      "SAP Data Integration",
+      "Google Maps API"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "title": {
+      "id": "Bahasa",
+      "en": "Languages"
+    },
+    "items": [
+      "Indonesia (native)",
+      "English (professional)"
+    ],
+    "sortOrder": 4
+  }
+]

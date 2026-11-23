@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "enterprise-internal-applications",
+    "title": {
+      "id": "Aplikasi Internal Enterprise",
+      "en": "Enterprise Internal Applications"
+    },
+    "summary": {
+      "id": "Aplikasi internal untuk domain Legal, Procurement, dan Vendor Management yang dipakai lintas business unit.",
+      "en": "Internal applications for Legal, Procurement, and Vendor Management, used across multiple business units."
+    },
+    "description": {
+      "id": "## Ringkasan\n\nBerkontribusi membangun dan mengembangkan aplikasi internal enterprise untuk tim Legal, Procurement, dan Vendor Management. Aplikasi digunakan oleh beberapa business unit dengan kebutuhan dan data yang berbeda.\n\n## Peran & hal teknis\n\n- Arsitektur microservices dengan desain database multi-tenant: satu platform, data tiap business unit tetap terisolasi\n- Integrasi data SAP ke fitur procurement untuk mengurangi input manual\n- Pengelolaan operasi database backend dan konsistensi data antar layanan\n- Kolaborasi dengan product, QA, dan business user untuk meningkatkan performa, skalabilitas, dan keandalan\n\n## Catatan\n\nDetail teknis dan data perusahaan tidak ditampilkan karena bersifat internal.",
+      "en": "## Overview\n\nContributed to building and enhancing internal enterprise applications for the Legal, Procurement, and Vendor Management teams. The applications are used by multiple business units with different needs and data.\n\n## Role & technical details\n\n- Microservices architecture with multi-tenant database design: one platform while keeping each business unit's data isolated\n- SAP data integration into procurement features to reduce manual input\n- Backend database operations and data consistency across services\n- Collaboration with product, QA, and business users to improve performance, scalability, and reliability\n\n## Note\n\nTechnical details and company data are not shown because they are internal."
+    },
+    "tech": [
+      "Node.js",
+      "Go",
+      "React",
+      "Next.js",
+      "Microservices",
+      "SAP Integration"
+    ],
+    "status": "in_progress",
+    "year": 2025,
+    "featured": true,
+    "sortOrder": 0
+  },
+  {
+    "slug": "travel-destination-app",
+    "title": {
+      "id": "Aplikasi Destinasi Wisata",
+      "en": "Travel Destination App"
+    },
+    "summary": {
+      "id": "Aplikasi informasi destinasi wisata hasil proyek akhir tim MSIB Dicoding, dibangun dengan React dan Express.",
+      "en": "A travel destination information app built as a team capstone for MSIB Dicoding with React and Express."
+    },
+    "description": {
+      "id": "## Ringkasan\n\nProyek akhir tim dalam program MSIB Cycle 6 di Dicoding. Aplikasi menampilkan informasi destinasi wisata dan dibangun dengan React di sisi frontend serta Express di sisi backend.\n\n## Peran\n\n- Bekerja dalam tim untuk merancang dan membangun aplikasi dari nol\n- Menghubungkan antarmuka React dengan layanan Express\n- Menyusun alur data destinasi wisata dari API ke halaman yang mudah dibaca\n\n## Yang dipelajari\n\nPengalaman pertama membangun produk utuh dalam tim: pembagian tugas, integrasi frontend–backend, dan menjaga kualitas kode saat tenggat mendekat.",
+      "en": "## Overview\n\nA team final project in the MSIB Cycle 6 program at Dicoding. The app presents travel destination information and was built with React on the frontend and Express on the backend.\n\n## Role\n\n- Worked in a team to design and build the application from scratch\n- Connected the React interface to the Express service\n- Shaped the destination data flow from the API into readable pages\n\n## What I learned\n\nMy first experience building a complete product as a team: splitting work, integrating frontend and backend, and keeping code quality as the deadline approached."
+    },
+    "tech": [
+      "React",
+      "Express.js",
+      "REST API"
+    ],
+    "status": "completed",
+    "year": 2024,
+    "featured": true,
+    "sortOrder": 1
+  },
+  {
+    "slug": "movie-web-app",
+    "title": {
+      "id": "Movie Web App",
+      "en": "Movie Web App"
+    },
+    "summary": {
+      "id": "Layanan Web API untuk menampilkan informasi film, dibangun dengan React dan Express.",
+      "en": "A Web API service that shows movie information, built with React and Express."
+    },
+    "description": {
+      "id": "## Ringkasan\n\nAplikasi web untuk menampilkan informasi film. Frontend React mengambil data dari layanan Express yang mengekspos endpoint REST.\n\n## Detail\n\n- Antarmuka React untuk menjelajahi daftar dan detail film\n- Endpoint Express sebagai sumber data\n- Latihan integrasi API, penanganan loading, dan tampilan data yang konsisten\n\n## Fokus pembelajaran\n\nMemisahkan lapisan data dari tampilan dan memastikan antarmuka tetap nyaman dipakai saat data belum tersedia.",
+      "en": "## Overview\n\nA web application that displays movie information. The React frontend fetches data from an Express service exposing REST endpoints.\n\n## Details\n\n- React interface to browse movie lists and details\n- Express endpoints as the data source\n- Practice with API integration, loading states, and consistent data presentation\n\n## Learning focus\n\nSeparating the data layer from the view and keeping the interface usable while data is still loading."
+    },
+    "tech": [
+      "React",
+      "Express.js",
+      "REST API"
+    ],
+    "status": "completed",
+    "year": 2024,
+    "sortOrder": 2
+  },
+  {
+    "slug": "portfolio-website",
+    "title": {
+      "id": "Website Portofolio",
+      "en": "Portfolio Website"
+    },
+    "summary": {
+      "id": "Website portofolio yang sedang dibangun dengan React, TypeScript, Go, dan PostgreSQL.",
+      "en": "A portfolio website currently being built with React, TypeScript, Go, and PostgreSQL."
+    },
+    "description": {
+      "id": "## Ringkasan\n\nWebsite yang sedang kamu lihat ini. Dibangun sebagai proyek penuh: tampilan, API, basis data, dan panel admin untuk mengelola konten.\n\n## Tahap saat ini\n\n- Frontend React + TypeScript + Tailwind CSS dengan data statis\n- Mode gelap/terang dan dukungan bahasa Indonesia/Inggris\n- Halaman proyek, blog markdown, dan form kontak\n\n## Berikutnya\n\n- Backend Go mengikuti pola handler → service → repository\n- PostgreSQL dengan migrasi golang-migrate\n- Admin panel untuk mengelola proyek, tulisan, dan pesan kontak\n\n## Fokus\n\nKesederhanaan: sesedikit mungkin dependensi, struktur yang jelas, dan performa yang tetap ringan.",
+      "en": "## Overview\n\nThe website you are looking at right now. Built as a complete project: interface, API, database, and an admin panel to manage content.\n\n## Current stage\n\n- React + TypeScript + Tailwind CSS frontend with static data\n- Dark/light mode and Indonesian/English support\n- Project pages, markdown blog, and a contact form\n\n## Next\n\n- Go backend following the handler → service → repository pattern\n- PostgreSQL with golang-migrate migrations\n- Admin panel to manage projects, posts, and contact messages\n\n## Focus\n\nSimplicity: as few dependencies as possible, a clear structure, and a lightweight feel."
+    },
+    "tech": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Go",
+      "PostgreSQL"
+    ],
+    "status": "in_progress",
+    "year": 2026,
+    "featured": true,
+    "sortOrder": 3
+  }
+]

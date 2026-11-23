@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "kenapa-go-untuk-backend",
+    "title": {
+      "id": "Kenapa Saya Memilih Go untuk Backend",
+      "en": "Why I Chose Go for Backend"
+    },
+    "excerpt": {
+      "id": "Bukan karena sedang populer, tetapi karena Go memaksa saya berpikir lebih jelas tentang batasan dan kesederhanaan.",
+      "en": "Not because it is trendy, but because Go forces me to think more clearly about boundaries and simplicity."
+    },
+    "content": {
+      "id": "## Mulai dari rasa frustrasi\n\nDulu saya sering menghabiskan lebih banyak waktu mengurus struktur proyek daripada menulis fitur. Setiap orang punya selera arsitektur sendiri, dan tidak ada yang benar-benar salah — sampai proyeknya membesar dan tidak ada lagi yang bisa menebak isi folder `utils`.\n\nGo tidak menyelesaikan semua masalah itu, tetapi ia mempersempit pilihan. Sedikit cara untuk melakukan satu hal berarti lebih sedikit debat, dan lebih banyak kode yang selesai.\n\n## Tiga hal yang membuat saya bertahan\n\n**1. Kompilasi yang cepat dan binary tunggal.** Deploy menjadi sederhana: satu file, satu service. Tidak perlu memikirkan versi runtime di server.\n\n**2. Error ditangani secara eksplisit.** Tidak ada exception yang muncul entah dari mana. Semua jalur gagal terlihat di kode, dan itu membuat saya lebih disiplin soal konteks error.\n\n```go\nfunc (s *Service) GetOrder(ctx context.Context, id string) (*Order, error) {\n    order, err := s.repo.FindByID(ctx, id)\n    if err != nil {\n        return nil, fmt.Errorf(\"get order %s: %w\", id, err)\n    }\n    return order, nil\n}\n```\n\n**3. Konkurensi yang bisa dibaca.** Goroutine dan channel terasa berat di awal, tetapi setelah terbiasa, kode untuk pekerjaan paralel justru lebih mudah diikuti daripada callback atau promise chain yang panjang.\n\n## Yang perlu diterima\n\nGo bukan bahasa yang ekspresif. Tidak ada generic builder yang elegan, tidak ada fitur bahasa yang membuat satu baris terlihat pintar. Kalau kamu menikmati abstraksi tingkat tinggi, Go akan terasa membosankan.\n\nBagi saya, kebosanan itu justru nilai jualnya. Kode backend yang membosankan adalah kode yang bisa dibaca orang lain enam bulan kemudian.\n\n## Apakah harus Go?\n\nTidak. Gunakan alat yang membuatmu paling produktif. Tetapi kalau kamu lelah dengan kejutan di runtime dan ingin sistem yang perilakunya bisa ditebak, Go layak dicoba untuk satu proyek kecil dulu.",
+      "en": "## Starting from frustration\n\nI used to spend more time managing project structure than writing features. Everyone has their own architectural taste, and none of it is truly wrong — until the project grows and nobody can guess what lives inside the `utils` folder anymore.\n\nGo does not solve all of that, but it narrows the options. Fewer ways to do one thing means fewer debates, and more code that actually ships.\n\n## Three things that made me stay\n\n**1. Fast compilation and a single binary.** Deployment becomes simple: one file, one service. No need to worry about the runtime version on the server.\n\n**2. Errors are handled explicitly.** No exceptions appearing out of nowhere. Every failure path is visible in the code, and that makes me more disciplined about error context.\n\n```go\nfunc (s *Service) GetOrder(ctx context.Context, id string) (*Order, error) {\n    order, err := s.repo.FindByID(ctx, id)\n    if err != nil {\n        return nil, fmt.Errorf(\"get order %s: %w\", id, err)\n    }\n    return order, nil\n}\n```\n\n**3. Readable concurrency.** Goroutines and channels feel heavy at first, but once they click, parallel work is easier to follow than long callback or promise chains.\n\n## What you have to accept\n\nGo is not an expressive language. No elegant generic builders, no language features that make a single line look clever. If you enjoy high-level abstraction, Go will feel boring.\n\nTo me, that boredom is the selling point. Boring backend code is code someone else can read six months later.\n\n## Should you use Go?\n\nNo, not necessarily. Use the tool that makes you most productive. But if you are tired of runtime surprises and want a system whose behavior is predictable, Go is worth trying on one small project first."
+    },
+    "tags": [
+      "Go",
+      "Backend"
+    ],
+    "readingMinutes": 6,
+    "published": true,
+    "publishedAt": "2026-10-12T09:00:00.000Z"
+  },
+  {
+    "slug": "design-system-kecil-tailwind",
+    "title": {
+      "id": "Design System Kecil dengan CSS Variables dan Tailwind",
+      "en": "A Small Design System with CSS Variables and Tailwind"
+    },
+    "excerpt": {
+      "id": "Tidak perlu library komponen besar. Enam variabel warna dan satu aturan spasi sudah cukup untuk menjaga tampilan tetap konsisten.",
+      "en": "You do not need a large component library. Six color variables and one spacing rule are enough to keep a UI consistent."
+    },
+    "content": {
+      "id": "## Masalahnya bukan komponen\n\nDesign system sering diidentikkan dengan kumpulan komponen siap pakai. Padahal masalah yang paling sering saya temui bukan itu — melainkan **keputusan kecil yang diulang-ulang**: abu-abu mana yang dipakai untuk teks sekunder, berapa jarak antar bagian, dan bagaimana tampilan saat mode gelap.\n\nKalau keputusan itu disimpan di satu tempat, komponen bisa mengikuti dengan sendirinya.\n\n## Mulai dari token\n\n```css\n:root {\n  --bg: #fafaf9;\n  --surface: #ffffff;\n  --ink: #18181b;\n  --muted: #63636b;\n  --line: #e4e4e7;\n  --accent: #4f46e5;\n}\n\n.dark {\n  --bg: #0b0b0d;\n  --surface: #121215;\n  --ink: #f4f4f5;\n  --muted: #a1a1aa;\n  --line: #27272a;\n  --accent: #a5b4fc;\n}\n```\n\nDengan Tailwind v4, token ini bisa langsung dipetakan menjadi utility melalui `@theme inline`, sehingga kita tetap menulis `bg-surface` dan `text-muted`, bukan warna mentah.\n\n## Batasi warnanya\n\nAturan yang paling membantu saya: **satu warna aksen, sisanya netral**. Kalau ingin sesuatu terlihat penting, gunakan ukuran, bobot, atau jarak — bukan warna baru.\n\nEfek sampingnya bagus: mode gelap lebih mudah dibuat karena hanya ada satu variabel yang perlu disesuaikan, dan tampilan tetap terasa tenang.\n\n## Spasi yang konsisten\n\nSaya memakai satu skala jarak saja dan menghindari angka acak. Jarak antar bagian besar selalu `py-20` atau `py-24`, jarak di dalam kartu selalu kelipatan kecil. Konsistensi ini lebih terasa daripada animasi apa pun.\n\n## Kapan perlu library?\n\nKalau kamu butuh aksesibilitas kompleks — dialog, combobox, date picker — pakai library. Tetapi untuk layout, tipografi, dan kartu, token kecil sudah lebih dari cukup.",
+      "en": "## The problem is not components\n\nDesign systems are often equated with a set of ready-made components. Yet the problem I run into most is not that — it is **small decisions repeated over and over**: which gray to use for secondary text, how far apart sections should be, and how things look in dark mode.\n\nIf those decisions live in one place, components follow naturally.\n\n## Start with tokens\n\n```css\n:root {\n  --bg: #fafaf9;\n  --surface: #ffffff;\n  --ink: #18181b;\n  --muted: #63636b;\n  --line: #e4e4e7;\n  --accent: #4f46e5;\n}\n\n.dark {\n  --bg: #0b0b0d;\n  --surface: #121215;\n  --ink: #f4f4f5;\n  --muted: #a1a1aa;\n  --line: #27272a;\n  --accent: #a5b4fc;\n}\n```\n\nWith Tailwind v4, these tokens map directly to utilities through `@theme inline`, so we keep writing `bg-surface` and `text-muted` instead of raw colors.\n\n## Limit the palette\n\nThe rule that helped me most: **one accent color, everything else neutral**. If something needs to stand out, use size, weight, or spacing — not a new color.\n\nThe side effect is pleasant: dark mode is easier because only one variable changes, and the whole thing feels calm.\n\n## Consistent spacing\n\nI use a single spacing scale and avoid arbitrary numbers. Large section gaps are always `py-20` or `py-24`, gaps inside cards are always small multiples. That consistency is felt more than any animation.\n\n## When do you need a library?\n\nIf you need complex accessibility — dialogs, comboboxes, date pickers — use a library. But for layout, typography, and cards, a few tokens are more than enough."
+    },
+    "tags": [
+      "Frontend",
+      "Tailwind CSS"
+    ],
+    "readingMinutes": 5,
+    "published": true,
+    "publishedAt": "2026-09-05T09:00:00.000Z"
+  },
+  {
+    "slug": "migrasi-postgres-yang-rapi",
+    "title": {
+      "id": "Migrasi PostgreSQL yang Rapi dan Tidak Menakutkan",
+      "en": "Clean, Non-Scary PostgreSQL Migrations"
+    },
+    "excerpt": {
+      "id": "Aturan sederhana yang membuat perubahan skema bisa dilacak: satu arah, satu tujuan, dan tidak pernah mengedit masa lalu.",
+      "en": "Simple rules that keep schema changes traceable: one direction, one goal, and never edit the past."
+    },
+    "content": {
+      "id": "## Skema adalah kode\n\nKalau kode aplikasi masuk ke Git, skema basis data juga harus. Tidak ada lagi \"jalankan SQL ini di server produksi\" yang dikirim lewat chat.\n\nSaya memakai golang-migrate karena sederhana: file naik dan turun, nomor versi, dan perintah yang jelas.\n\n```bash\nmigrate create -ext sql -dir migrations -seq create_projects\n```\n\n## Tiga aturan yang saya pegang\n\n**1. Migrasi yang sudah jalan tidak pernah diedit.** Kalau ada kesalahan, buat migrasi baru untuk memperbaikinya. Mengedit masa lalu membuat keadaan server tidak bisa ditebak.\n\n**2. Setiap naik punya turun.** Walaupun jarang dipakai, menulis `down` memaksa saya memikirkan apakah perubahan ini benar-benar bisa dibalik.\n\n**3. Satu migrasi, satu tujuan.** Jangan mencampur penambahan tabel dengan perubahan kolom yang tidak berhubungan. Kalau gagal, kita tahu persis bagian mana yang bermasalah.\n\n## Contoh yang aman\n\nMenambah kolom nullable hampir selalu aman:\n\n```sql\nALTER TABLE projects ADD COLUMN cover_url TEXT;\n```\n\nMenambah kolom `NOT NULL` tanpa default tidak aman untuk tabel yang sudah berisi data. Urutannya: tambahkan nullable, isi datanya, lalu jadikan wajib di migrasi berikutnya.\n\n## Uji di data yang mirip produksi\n\nMigrasi yang lolos di database kosong belum tentu lolos di database berisi. Saya selalu menjalankan migrasi pada salinan data sebelum menyentuh staging. Ini terasa lambat, tetapi jauh lebih cepat daripada memperbaiki produksi pada malam hari.\n\n## Kebiasaan kecil yang membantu\n\n- Jalankan migrasi otomatis saat startup di lingkungan development saja\n- Catat versi skema di health check\n- Simpan hasil `migrate version` di log deploy\n\nSkema yang terawat membuat perubahan fitur terasa ringan. Itu investasi kecil dengan hasil yang terasa setiap hari.",
+      "en": "## The schema is code\n\nIf application code goes into Git, the database schema should too. No more \"run this SQL on the production server\" messages sent over chat.\n\nI use golang-migrate because it is simple: up and down files, version numbers, and clear commands.\n\n```bash\nmigrate create -ext sql -dir migrations -seq create_projects\n```\n\n## Three rules I follow\n\n**1. Migrations that have run are never edited.** If something is wrong, create a new migration to fix it. Editing the past makes the server state impossible to predict.\n\n**2. Every up has a down.** Even if rarely used, writing `down` forces me to think about whether the change is actually reversible.\n\n**3. One migration, one purpose.** Do not mix adding a table with an unrelated column change. If it fails, you know exactly which part is broken.\n\n## A safe example\n\nAdding a nullable column is almost always safe:\n\n```sql\nALTER TABLE projects ADD COLUMN cover_url TEXT;\n```\n\nAdding a `NOT NULL` column without a default is unsafe for tables that already contain data. The order is: add it nullable, backfill the data, then make it required in a follow-up migration.\n\n## Test against production-like data\n\nA migration that passes on an empty database may not pass on a full one. I always run migrations against a copy of the data before touching staging. It feels slow, but it is far faster than fixing production at night.\n\n## Small habits that help\n\n- Run migrations automatically on startup in development only\n- Expose the schema version in the health check\n- Keep the output of `migrate version` in the deploy log\n\nA well-maintained schema makes feature changes feel light. It is a small investment with daily returns."
+    },
+    "tags": [
+      "PostgreSQL",
+      "Backend"
+    ],
+    "readingMinutes": 7,
+    "published": true,
+    "publishedAt": "2026-08-11T09:00:00.000Z"
+  }
+]

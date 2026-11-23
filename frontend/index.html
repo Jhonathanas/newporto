@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio Jonathan Adi Saputro, Full Stack Developer dengan fokus backend — proyek, tulisan, dan pengalaman membangun aplikasi web enterprise dengan Node.js, Go, React, dan Next.js."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Jonathan Adi Saputro — Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Terapkan tema sebelum React hydrate supaya tidak berkedip. -->
+    <script>
+      ;(() => {
+        const stored = localStorage.getItem('theme')
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const theme = stored === 'dark' || stored === 'light' ? stored : prefersDark ? 'dark' : 'light'
+        document.documentElement.classList.toggle('dark', theme === 'dark')
+        document.documentElement.style.colorScheme = theme
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

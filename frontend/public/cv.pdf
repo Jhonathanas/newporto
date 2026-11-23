@@ -1,0 +1,110 @@
+%PDF-1.4
+%ту╧╙
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 4527 >>
+stream
+BT /F2 21 Tf 62.0 778.0 Td (JONATHAN ADI SAPUTRO) Tj ET
+BT /F1 10.5 Tf 62.0 753.0 Td (Full Stack Developer Ч Backend Focus) Tj ET
+BT /F1 9 Tf 62.0 738.0 Td (Yogyakarta, Indonesia  |  +62 838 5121 5107  |  jonathanadisaputro99@gmail.com) Tj ET
+BT /F1 9 Tf 62.0 725.0 Td (jnathan-porto.netlify.app) Tj ET
+BT /F2 10.2 Tf 62.0 702.0 Td (SUMMARY) Tj ET
+BT /F1 9.5 Tf 62.0 685.0 Td (Full Stack Developer with a backend focus and 2+ years of professional experience building) Tj ET
+BT /F1 9.5 Tf 62.0 672.2 Td (enterprise web applications with Node.js, Go, React, and Next.js. Experienced in microservices) Tj ET
+BT /F1 9.5 Tf 62.0 659.4 Td (architecture, multi-tenant database design, and integrating enterprise data from SAP into internal) Tj ET
+BT /F1 9.5 Tf 62.0 646.6 Td (systems. Works well in agile, cross-functional teams and focuses on delivering scalable, reliable,) Tj ET
+BT /F1 9.5 Tf 62.0 633.8 Td (and maintainable solutions.) Tj ET
+BT /F2 10.2 Tf 62.0 611.0 Td (WORK EXPERIENCE) Tj ET
+BT /F2 10 Tf 62.0 594.0 Td (Junior Full Stack Developer Ч Elnusa TBK  |  Mar 2025 Ц Present) Tj ET
+BT /F1 9.4 Tf 62.0 580.8 Td (Х Built and enhanced internal enterprise applications for the Legal, Procurement, and Vendor) Tj ET
+BT /F1 9.4 Tf 62.0 568.4 Td (  Management domains, used across multiple business units.) Tj ET
+BT /F1 9.4 Tf 62.0 556.0 Td (Х Contributed to a microservices architecture with multi-tenant database design, enabling multiple) Tj ET
+BT /F1 9.4 Tf 62.0 543.6 Td (  business units to run on a shared platform with isolated data.) Tj ET
+BT /F1 9.4 Tf 62.0 531.2 Td (Х Integrated SAP data into procurement features to reduce manual input.) Tj ET
+BT /F1 9.4 Tf 62.0 518.8 Td (Х Managed backend database operations and maintained data consistency across services.) Tj ET
+BT /F1 9.4 Tf 62.0 506.4 Td (Х Collaborated with product, QA, and business users to improve system performance, scalability, and) Tj ET
+BT /F1 9.4 Tf 62.0 494.0 Td (  reliability.) Tj ET
+BT /F2 10 Tf 62.0 476.6 Td (Coding Teacher \(Part-time\) Ч Kala Nanti Ruang Guru  |  Jul 2025 Ц Jul 2026) Tj ET
+BT /F1 9.4 Tf 62.0 463.4 Td (Х Taught programming fundamentals and computational thinking to students aged 7Ц18, online and in) Tj ET
+BT /F1 9.4 Tf 62.0 451.0 Td (  person.) Tj ET
+BT /F1 9.4 Tf 62.0 438.6 Td (Х Designed interactive lessons using Scratch, MIT App Inventor, and Python.) Tj ET
+BT /F1 9.4 Tf 62.0 426.2 Td (Х Guided students through hands-on projects that built problem-solving and critical thinking) Tj ET
+BT /F1 9.4 Tf 62.0 413.8 Td (  skills.) Tj ET
+BT /F2 10 Tf 62.0 396.4 Td (Front End Intern Ч Stevor  |  Nov 2024 Ц Feb 2025) Tj ET
+BT /F1 9.4 Tf 62.0 383.2 Td (Х Developed a web-based internal admin panel, translating UI designs into responsive frontend) Tj ET
+BT /F1 9.4 Tf 62.0 370.8 Td (  components.) Tj ET
+BT /F1 9.4 Tf 62.0 358.4 Td (Х Integrated backend REST APIs and implemented data presentation features.) Tj ET
+BT /F1 9.4 Tf 62.0 346.0 Td (Х Integrated the Google Maps API for location-based functionality.) Tj ET
+BT /F2 10 Tf 62.0 328.6 Td (Full Stack Intern Ч Tlab \(PT Teknologi Kode Indonesia\)  |  Apr Ц Sep 2024) Tj ET
+BT /F1 9.4 Tf 62.0 315.4 Td (Х Developed a QA project management system to manage test cases and testing workflows.) Tj ET
+BT /F1 9.4 Tf 62.0 303.0 Td (Х Implemented CRUD features and data synchronization between two separate databases.) Tj ET
+BT /F1 9.4 Tf 62.0 290.6 Td (Х Worked with QA engineers to translate testing requirements into technical solutions.) Tj ET
+BT /F2 10.2 Tf 62.0 263.2 Td (EDUCATION) Tj ET
+BT /F2 10 Tf 62.0 246.2 Td (Bachelor of Informatics \(S1 Informatika\) Ч Universitas Amikom Yogyakarta  |  GPA 3.56) Tj ET
+BT /F1 9.4 Tf 62.0 233.0 Td (Х Relevant courses: Web Programming, Database Systems, Software Engineering, Algorithms and) Tj ET
+BT /F1 9.4 Tf 62.0 220.6 Td (  Programming.) Tj ET
+BT /F1 9.4 Tf 62.0 208.2 Td (Х Final project: built a library management application with Laravel and SQL, and wrote the full) Tj ET
+BT /F1 9.4 Tf 62.0 195.8 Td (  Software Requirements Specification \(SRS\) document.) Tj ET
+BT /F2 10 Tf 62.0 178.4 Td (MSIB Cycle 6 Ч Independent Study \(React & Backend\) Ч Dicoding  |  Apr Ц Sep 2024) Tj ET
+BT /F1 9.4 Tf 62.0 165.2 Td (Х Completed an intensive React and backend program; with my team, built a travel destination) Tj ET
+BT /F1 9.4 Tf 62.0 152.8 Td (  information web application as the final project.) Tj ET
+BT /F1 8 Tf 62.0 30.0 Td (Jonathan Adi Saputro Ч Curriculum Vitae) Tj ET
+BT /F2 8 Tf 509.0 30.0 Td (1 / 2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1478 >>
+stream
+BT /F2 10.2 Tf 62.0 768.0 Td (PROJECTS) Tj ET
+BT /F2 10 Tf 62.0 751.0 Td (Travel Destination Web App Ч Team Capstone, MSIB Dicoding) Tj ET
+BT /F1 9.4 Tf 62.0 737.8 Td (Х Travel destination information application built with React and Express.) Tj ET
+BT /F2 10 Tf 62.0 720.4 Td (Movie Web App) Tj ET
+BT /F1 9.4 Tf 62.0 707.2 Td (Х Web API service that shows movie information, built with React and Express.) Tj ET
+BT /F2 10 Tf 62.0 689.8 Td (Portfolio Website Ч React, TypeScript, Go, PostgreSQL \(in progress\)) Tj ET
+BT /F1 9.4 Tf 62.0 676.6 Td (Х Personal portfolio with bilingual content, dark mode, markdown blog, and an admin panel in) Tj ET
+BT /F1 9.4 Tf 62.0 664.2 Td (  development.) Tj ET
+BT /F2 10.2 Tf 62.0 636.8 Td (SKILLS) Tj ET
+BT /F1 9.4 Tf 62.0 619.8 Td (Backend: Node.js, Express.js, Go, Laravel, REST API, Microservices, Multi-tenant database design,) Tj ET
+BT /F1 9.4 Tf 62.0 607.4 Td (SQL, Prisma) Tj ET
+BT /F1 9.4 Tf 62.0 595.0 Td (Frontend: React.js, Next.js, TypeScript, Tailwind CSS, Redux Toolkit) Tj ET
+BT /F1 9.4 Tf 62.0 582.6 Td (Tools & Practices: Git, Docker, CI/CD, Agile, TDD, NextAuth) Tj ET
+BT /F1 9.4 Tf 62.0 570.2 Td (Integration: SAP data integration, Google Maps API) Tj ET
+BT /F2 10.2 Tf 62.0 547.8 Td (LANGUAGES) Tj ET
+BT /F1 9.4 Tf 62.0 530.8 Td (Indonesian \(native\)  |  English \(professional working proficiency\)) Tj ET
+BT /F1 8 Tf 62.0 30.0 Td (Jonathan Adi Saputro Ч Curriculum Vitae) Tj ET
+BT /F2 8 Tf 509.0 30.0 Td (2 / 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000004905 00000 n 
+0000005041 00000 n 
+0000006571 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+6707
+%%EOF
