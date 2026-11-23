@@ -52,12 +52,21 @@ git branch -M main
 git push -u origin main
 ```
 
-### 3. Neon (database)
+### 3. Neon (database lewat integrasi Vercel)
 
-1. Create project → nama bebas, region pilih yang dekat (mis. Singapore).
-2. Copy **connection string** dari dashboard. Biasanya:
+Neon sekarang disarankan dibuat lewat Marketplace Vercel (bukan dari console Neon langsung).
+
+1. Di dashboard Vercel, buka project → tab **Storage** (atau **Marketplace**) → cari **Neon Postgres** → **Install**.
+2. Pilih mode **Vercel-Managed / Native Integration** (billing lewat Vercel, cocok untuk akun baru). Pilih plan **Free** kalau tersedia.
+3. Beri nama resource, pilih region terdekat (mis. Singapore), lalu **Create**.
+4. Saat diminta, **Connect to Project** → pilih project Vercel portofolio. Kalau dilewati, buka Storage → database → **Connect to Project**.
+5. Integrasi akan menyuntik env var ke project Vercel. Untuk backend Go di Render, ambil connection string **tanpa pooling**:
+   - Buka project Vercel → **Settings → Environment Variables**, salin nilai `DATABASE_URL_UNPOOLED` (atau `DATABASE_URL` dengan connection pooling dimatikan di Neon Console → **Connect**).
+   - Atau di Storage → database → **Connect**, matikan **Connection pooling**, lalu copy string-nya.
+6. Bentuk umum:
    `postgresql://user:pass@ep-xxx.region.aws.neon.tech/dbname?sslmode=require`
-3. Simpan sementara. Jangan commit.
+
+String ini dipakai di Render sebagai `DATABASE_URL`. Jangan commit. Variabel `DATABASE_URL` di Vercel aman untuk frontend statik karena tidak diawali `VITE_`, jadi tidak masuk bundle browser.
 
 Catatan: project Neon gratis akan sleep setelah ±5 menit tanpa aktivitas dan bangun otomatis saat ada koneksi. Itu normal.
 
