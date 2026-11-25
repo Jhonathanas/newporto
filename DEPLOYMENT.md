@@ -169,9 +169,9 @@ Jadi tidak perlu workflow deploy manual.
 
 ## Keterbatasan yang perlu diketahui
 
-1. **Render free tidur setelah 15 menit tanpa traffic.** Request pertama bisa memakan ±1 menit. Opsi: daftar URL `https://<api>.onrender.com/health` di cron-job.org atau UptimeRobot dengan interval 10 menit supaya tetap hangat. Ini masih gratis.
-2. **Upload gambar tidak persisten.** Render free tidak punya disk permanen; file di `/app/uploads` hilang saat restart/deploy. Konten seed saat ini tidak memakai `/uploads`, jadi situs tetap tampil. Kalau nanti admin sering upload gambar, solusinya pindahkan ke object storage (Cloudinary / ImageKit / Cloudflare R2) — butuh perubahan kode backend.
-3. **Seed hanya mengisi tabel kosong.** Aman dijalankan ulang, tetapi `ADMIN_EMAIL` / `ADMIN_PASSWORD` selalu di-upsert saat container start. Untuk ganti password admin: ubah env `ADMIN_PASSWORD` di Render lalu redeploy.
+1. **SnapDeploy free tidur setelah 15 menit tanpa traffic.** Request pertama bisa memakan ±1 menit. Opsi: daftar URL `https://<nama>.containers.snapdeploy.app/health` di cron-job.org atau UptimeRobot dengan interval 10 menit supaya tetap hangat. Ini masih gratis.
+2. **Upload gambar tidak persisten.** SnapDeploy free tidak punya disk permanen; file di `/app/uploads` hilang saat restart/deploy. Konten seed saat ini tidak memakai `/uploads`, jadi situs tetap tampil. Kalau nanti admin sering upload gambar, solusinya pindahkan ke object storage (Cloudinary / ImageKit / Cloudflare R2) — butuh perubahan kode backend.
+3. **Seed hanya mengisi tabel kosong.** Aman dijalankan ulang, tetapi `ADMIN_EMAIL` / `ADMIN_PASSWORD` selalu di-upsert saat container start. Untuk ganti password admin: ubah env `ADMIN_PASSWORD` di SnapDeploy lalu redeploy.
 4. **Link sosial di seed masih pointing ke Netlify lama.** Kalau mau diganti ke URL baru, edit `backend/seed/profile.json` **sebelum deploy pertama**. Setelah database terisi, seed tidak akan menimpanya.
 5. **Halaman admin masih pakai endpoint get-by-id yang terbatas** seperti di development; tidak berubah saat deploy.
 
@@ -188,4 +188,16 @@ Jadi tidak perlu workflow deploy manual.
 
 ## Kalau nanti mau domain sendiri
 
-Beli domain di registrar mana pun, lalu tambahkan di Vercel (Domain → Add). `FRONTEND_ORIGIN` di Render harus diganti ke domain baru tersebut. Backend tetap memakai URL Render; tidak perlu domain terpisah karena sudah di-proxy.
+Beli domain di registrar mana pun, lalu tambahkan di Vercel (Domain → Add). `FRONTEND_ORIGIN` di SnapDeploy harus diganti ke domain baru tersebut. Backend tetap memakai URL SnapDeploy; tidak perlu domain terpisah karena sudah di-proxy.
+
+## Deploy aktual
+
+| Item | Nilai |
+| --- | --- |
+| Frontend | `https://newporto-cyan.vercel.app` |
+| Backend | `https://porto-505d3.containers.snapdeploy.app` |
+| Database | Neon Free (via Vercel Marketplace), memakai `DATABASE_URL_UNPOOLED` sebagai `DATABASE_URL` |
+| `FRONTEND_ORIGIN` | `https://newporto-cyan.vercel.app` (tanpa trailing `/`) |
+| CI | `.github/workflows/ci.yml` |
+
+Rewrite Vercel ada di `frontend/vercel.json`.

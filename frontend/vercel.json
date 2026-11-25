@@ -1,0 +1,21 @@
+{
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://porto-505d3.containers.snapdeploy.app/api/$1"
+    },
+    {
+      "source": "/uploads/(.*)",
+      "destination": "https://porto-505d3.containers.snapdeploy.app/uploads/$1"
+    },
+    {
+      "source": "/health",
+      "destination": "https://porto-505d3.containers.snapdeploy.app/health"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
