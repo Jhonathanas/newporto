@@ -182,6 +182,9 @@ Jadi tidak perlu workflow deploy manual.
 | Login admin 403 `origin tidak diizinkan` | `FRONTEND_ORIGIN` di backend beda dengan URL Vercel | Samakan persis (termasuk `https://`, tanpa trailing `/`), lalu redeploy backend |
 | Situs blank / 404 di `/projects` | `vercel.json` belum dibuat atau rewrite catch-all belum ada | Pastikan file sudah di-copy dan di-push |
 | `/health` 503 | Neon belum bisa dijangkau / migration gagal | Cek `DATABASE_URL` (harus `sslmode=require`) dan log backend |
+| `Port mismatch detected` di SnapDeploy | Port tidak di-set eksplisit / Dockerfile tidak terdeteksi | Settings → Container → Port `8080`, health path `/health`, lalu redeploy. Dockerfile sudah punya `EXPOSE 8080` |
+| Log `env=development` | `APP_ENV` tidak di-set di SnapDeploy | Tambah `APP_ENV=production` di Environment Variables, lalu redeploy |
+| 502 setelah lama idle | Container free sedang bangun dari sleep | Tunggu ±1 menit lalu cek ulang; atau daftarkan URL `/health` ke UptimeRobot interval 10 menit |
 | Form kontak 429 | Rate limit 3 pesan/menit per IP | Tunggu sebentar |
 | Gambar upload hilang | Backend restart | Lihat keterbatasan nomor 2 |
 | Render/SnapDeploy minta kartu | Compute bukan Free, atau verifikasi akun | Pilih **Free**; kalau tetap diminta, pakai SnapDeploy (5b) |
